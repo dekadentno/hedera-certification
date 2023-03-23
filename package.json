@@ -1,0 +1,21 @@
+{
+  "name": "hedera-certification",
+  "version": "1.0.0",
+  "description": "Repo for my certification files for the hedera exam",
+  "scripts": {
+    "task:setup": "node src/setup.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekadentno/hedera-certification.git"
+  },
+  "author": "Matej Lazarevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dekadentno/hedera-certification/issues"
+  },
+  "homepage": "https://github.com/dekadentno/hedera-certification#readme",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.23.0"
+  }
+}
