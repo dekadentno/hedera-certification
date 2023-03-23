@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Repo for my certification files for the hedera exam",
   "scripts": {
-    "task:setup": "node src/setup.mjs"
+    "task:setup": "node src/setup.mjs",
+    "task:scheduled-transaction": "node src/scheduled-transaction.mjs"
   },
   "repository": {
     "type": "git",
