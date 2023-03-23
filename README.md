@@ -271,3 +271,102 @@ Debug: receipts:  [
   }
 ]
 ```
+
+### Task 5 - Multi signature
+This task is implemented in `src/multi-signature.mjs`.
+
+To run this task, execute `npm run task:multi-signature`.
+
+```
+mlazarevic @ OS442 ~/playground/hedera-certification (master)
+└─ $ ▶ npm run task:multi-signature 
+
+> hedera-certification@1.0.0 task:multi-signature
+> node src/multi-signature.mjs
+
+
+Start Task 5!
+
+Debug: new account :  TransactionResponse {
+  nodeId: AccountId {
+    shard: Long { low: 0, high: 0, unsigned: false },
+    realm: Long { low: 0, high: 0, unsigned: false },
+    num: Long { low: 8, high: 0, unsigned: false },
+    aliasKey: null,
+    evmAddress: null,
+    _checksum: null
+  },
+  transactionHash: <Buffer e9 63 fe 95 cb 9d bb f6 91 f2 9d 4b 53 e9 0e 85 d1 15 ca 77 b4 32 58 95 93 22 43 d6 8c ea 9c 7f 32 58 12 fe ec a5 ad 2d 03 a5 b3 cd f2 4a cc a7>,
+  transactionId: TransactionId {
+    accountId: AccountId {
+      shard: [Long],
+      realm: [Long],
+      num: [Long],
+      aliasKey: null,
+      evmAddress: null,
+      _checksum: null
+    },
+    validStart: Timestamp { seconds: [Long], nanos: [Long] },
+    scheduled: false,
+    nonce: null
+  }
+} AccountId {
+  shard: Long { low: 0, high: 0, unsigned: false },
+  realm: Long { low: 0, high: 0, unsigned: false },
+  num: Long { low: 3906638, high: 0, unsigned: false },
+  aliasKey: null,
+  evmAddress: null,
+  _checksum: null
+}
+file:///home/mlazarevic/playground/hedera-certification/node_modules/@hashgraph/sdk/src/ReceiptStatusError.js:37
+        super(
+        ^
+
+ReceiptStatusError: receipt for transaction 0.0.3904546@1679571424.674709546 contained error status INVALID_SIGNATURE
+    at new ReceiptStatusError (file:///home/mlazarevic/playground/hedera-certification/node_modules/@hashgraph/sdk/src/ReceiptStatusError.js:37:9)
+    at TransactionReceiptQuery._mapStatusError (file:///home/mlazarevic/playground/hedera-certification/node_modules/@hashgraph/sdk/src/transaction/TransactionReceiptQuery.js:329:16)
+    at TransactionReceiptQuery.execute (file:///home/mlazarevic/playground/hedera-certification/node_modules/@hashgraph/sdk/src/Executable.js:692:32)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async TransactionResponse.getReceipt (file:///home/mlazarevic/playground/hedera-certification/node_modules/@hashgraph/sdk/src/transaction/TransactionResponse.js:81:25)
+    at async file:///home/mlazarevic/playground/hedera-certification/src/multi-signature.mjs:43:25 {
+  status: Status { _code: 7 },
+  transactionId: TransactionId {
+    accountId: AccountId {
+      shard: Long { low: 0, high: 0, unsigned: false },
+      realm: Long { low: 0, high: 0, unsigned: false },
+      num: Long { low: 3904546, high: 0, unsigned: false },
+      aliasKey: null,
+      evmAddress: null,
+      _checksum: null
+    },
+    validStart: Timestamp {
+      seconds: Long { low: 1679571424, high: 0, unsigned: false },
+      nanos: Long { low: 674709546, high: 0, unsigned: false }
+    },
+    scheduled: false,
+    nonce: null
+  },
+  transactionReceipt: TransactionReceipt {
+    status: Status { _code: 7 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 184198,
+      expirationTime: 2023-03-23T12:00:00.000Z,
+      exchangeRateInCents: 6.1399333333333335
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 0, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [],
+    duplicates: [],
+    children: []
+  }
+}
+```
