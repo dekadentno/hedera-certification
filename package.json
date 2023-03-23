@@ -17,5 +17,8 @@
   "homepage": "https://github.com/dekadentno/hedera-certification#readme",
   "dependencies": {
     "@hashgraph/sdk": "^2.23.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
   }
 }
