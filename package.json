@@ -6,7 +6,8 @@
     "task:setup": "node src/setup.mjs",
     "task:scheduled-transaction": "node src/scheduled-transaction.mjs",
     "task:token-service": "node src/token-service.mjs",
-    "task:multi-signature": "node src/multi-signature.mjs"
+    "task:multi-signature": "node src/multi-signature.mjs",
+    "task:consensus-service": "node src/consensus-service.mjs"
   },
   "repository": {
     "type": "git",

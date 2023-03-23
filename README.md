@@ -370,3 +370,105 @@ ReceiptStatusError: receipt for transaction 0.0.3904546@1679571424.674709546 con
   }
 }
 ```
+
+### Task 6 - Consensus service
+
+This task is implemented in `src/consensus-service.mjs`.
+
+To run this task, execute `npm run task:consensus-service`.
+
+```
+mlazarevic @ OS442 ~/playground/hedera-certification (master)
+└─ $ ▶ npm run task:consensus-service 
+
+> hedera-certification@1.0.0 task:consensus-service
+> node src/consensus-service.mjs
+
+
+Start Task 6
+
+Debug: Topic id: 0.0.3906939
+Debug: receipt: {
+    "status": {
+        "_code": 22
+    },
+    "accountId": null,
+    "fileId": null,
+    "contractId": null,
+    "topicId": null,
+    "tokenId": null,
+    "scheduleId": null,
+    "exchangeRate": {
+        "hbars": 30000,
+        "cents": 184198,
+        "expirationTime": "2023-03-23T12:00:00.000Z",
+        "exchangeRateInCents": 6.1399333333333335
+    },
+    "topicSequenceNumber": {
+        "low": 1,
+        "high": 0,
+        "unsigned": false
+    },
+    "topicRunningHash": {
+        "0": 197,
+        "1": 126,
+        "2": 158,
+        "3": 232,
+        "4": 248,
+        "5": 151,
+        "6": 137,
+        "7": 29,
+        "8": 189,
+        "9": 4,
+        "10": 96,
+        "11": 235,
+        "12": 173,
+        "13": 148,
+        "14": 223,
+        "15": 230,
+        "16": 93,
+        "17": 44,
+        "18": 18,
+        "19": 195,
+        "20": 81,
+        "21": 139,
+        "22": 44,
+        "23": 77,
+        "24": 196,
+        "25": 198,
+        "26": 171,
+        "27": 244,
+        "28": 111,
+        "29": 93,
+        "30": 69,
+        "31": 213,
+        "32": 142,
+        "33": 23,
+        "34": 133,
+        "35": 93,
+        "36": 49,
+        "37": 50,
+        "38": 159,
+        "39": 236,
+        "40": 110,
+        "41": 187,
+        "42": 11,
+        "43": 182,
+        "44": 71,
+        "45": 166,
+        "46": 183,
+        "47": 187
+    },
+    "totalSupply": {
+        "low": 0,
+        "high": 0,
+        "unsigned": false
+    },
+    "scheduledTransactionId": null,
+    "serials": [],
+    "duplicates": [],
+    "children": []
+}
+Link to topic: https://hashscan.io/testnet/topic/0.0.3906939
+Current date: 12:46:57 GMT+0100 (Central European Standard Time)
+```
