@@ -24,7 +24,7 @@ mlazarevic @ OS442 ~/playground/hedera-certification
 In order to run tasks locally:
 ```
 nvm use 16 
-git clone [https://link-to-project-repo](https://github.com/dekadentno/hedera-certification.git)
+git clone https://github.com/dekadentno/hedera-certification.git
 cd hedera-certification
 npm i
 ``` 
