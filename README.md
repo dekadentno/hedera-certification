@@ -125,5 +125,149 @@ Debug: account1 0.0.3904546 302e020100300506032b6570042204208c6be37d406d89b75ba0
 Debug: TX created!
 Debug: Schedule created for TX!
 Serialized TX: 0aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018091880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018061880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018041880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018071880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018041880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018051880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e912000aa5012aa2010a9d010a1b0a0c08efb5f0a00610c39fa0e30112090800100018a2a8ee01180012060800100018051880cab5ee01220208783200d202690a350880c2d72f12004a2c0a2a0a130a090800100018a2a8ee0110ffa7d6b90718000a130a090800100018a3a8ee011080a8d6b9071800120c5363686564756c65642074781a22122035cfc0cb0094c2d15298b2e657da9eb97b79eae31e9368490f29a223270df4e91200
+```
 
+### Task - Token Service
+
+This task is implemented in `src/token-service.mjs`.
+
+To run this task, execute `npm run task:token-service`.
+
+```
+mlazarevic @ OS442 ~/playground/hedera-certification (master)
+└─ $ ▶ npm run task:token-service 
+
+> hedera-certification@1.0.0 task:token-service
+> node src/token-service.mjs
+
+
+Start Task 2!
+
+init
+- Created NFT with Token ID: 0.0.3905185 
+
+Debug: transaction status: SUCCESS
+
+- Created NFT 0.0.3905185 with serial: 1 
+
+- Created NFT 0.0.3905185 with serial: 2 
+
+- Created NFT 0.0.3905185 with serial: 3 
+
+- Created NFT 0.0.3905185 with serial: 4 
+
+- Created NFT 0.0.3905185 with serial: 5 
+
+Debug: receipts:  [
+  TransactionReceipt {
+    status: Status { _code: 22 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 183600,
+      expirationTime: 2023-03-23T11:00:00.000Z,
+      exchangeRateInCents: 6.12
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 1, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [ [Long] ],
+    duplicates: [],
+    children: []
+  },
+  TransactionReceipt {
+    status: Status { _code: 22 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 183600,
+      expirationTime: 2023-03-23T11:00:00.000Z,
+      exchangeRateInCents: 6.12
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 2, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [ [Long] ],
+    duplicates: [],
+    children: []
+  },
+  TransactionReceipt {
+    status: Status { _code: 22 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 183600,
+      expirationTime: 2023-03-23T11:00:00.000Z,
+      exchangeRateInCents: 6.12
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 3, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [ [Long] ],
+    duplicates: [],
+    children: []
+  },
+  TransactionReceipt {
+    status: Status { _code: 22 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 183600,
+      expirationTime: 2023-03-23T11:00:00.000Z,
+      exchangeRateInCents: 6.12
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 4, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [ [Long] ],
+    duplicates: [],
+    children: []
+  },
+  TransactionReceipt {
+    status: Status { _code: 22 },
+    accountId: null,
+    fileId: null,
+    contractId: null,
+    topicId: null,
+    tokenId: null,
+    scheduleId: null,
+    exchangeRate: ExchangeRate {
+      hbars: 30000,
+      cents: 183600,
+      expirationTime: 2023-03-23T11:00:00.000Z,
+      exchangeRateInCents: 6.12
+    },
+    topicSequenceNumber: Long { low: 0, high: 0, unsigned: false },
+    topicRunningHash: Uint8Array(0) [],
+    totalSupply: Long { low: 5, high: 0, unsigned: false },
+    scheduledTransactionId: null,
+    serials: [ [Long] ],
+    duplicates: [],
+    children: []
+  }
+]
 ```
